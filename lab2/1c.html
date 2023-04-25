@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>switch</title>
+	</head>
+	<body>
+		<script>
+			var n1,n2,ch,res=0
+			n1=parseInt(window.prompt("enter the number 1"));
+			n2=parseInt(window.prompt("enter the number 2"));
+			ch=window.prompt("enter the operator");
+			document.writeln("num1 = "+n1);
+			document.writeln("<br>num2 = "+n2);
+			document.writeln("<br>entered choice = "+ch);
+			switch(ch)
+			{
+				case '+':res=n1+n2;
+					 break;
+				case '-':res=n1-n2;
+					 break;
+				case '*':res=n1*n2;
+					 break;
+				case '/':res=n1/n2;
+					 break;
+				case '%':res=n1%n2;
+					 break;
+				default:document.writeln("enter valid operator");
+			}
+			document.writeln("<h1> result is "+res);				
+		</script>
+	</body>
+</html>

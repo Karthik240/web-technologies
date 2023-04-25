@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>biggest of three</title>
+	</head>
+	<body>
+		<script>
+			var n1,n2,n3;
+			var num1,num2,num3;
+			num1=window.prompt("enter the number 1");
+			num2=window.prompt("enter the number 2");
+			num3=window.prompt("enter the number 3");
+			n1=parseInt(num1);
+			n2=parseInt(num2);
+			n3=parseInt(num3);
+			document.writeln("number 1= "+n1);
+			document.writeln("<br>number 2= "+n2);
+			document.writeln("<br>number 3= "+n3);
+			if(n1>n2 && n1>n3)
+				document.writeln("<h1>"+n1+" is largest of three");
+			else if(n2>n1 && n2>n3)
+				document.writeln("<h1>"+n2+" is largest of three");
+			else if(n3>n1 && n3>n1)
+				document.writeln("<h1>"+n3+" is largest of three");
+			else
+				document.writeln("<h1> all the numbers are equal");
+		</script>
+	</body>
+</html>

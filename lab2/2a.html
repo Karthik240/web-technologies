@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>sum of dig</title>
+	</head>
+	<body>
+		<script>
+			var num,sum=0,dup
+			num=parseInt(window.prompt("enter the number"));
+			dup=num
+			document.writeln("<h1>entered number "+num);
+			while(dup>0)
+			{
+				sum=sum+(dup%10);
+				dup=Math.floor(dup/10);
+			}
+			document.writeln("<h1><br> sum is "+sum);
+		</script>
+	</body>
+</html>
