@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>animation</title>
+		<style>
+			div
+			{
+				position:relative;
+				width:150px;
+				height:150px;
+				animation:square 4s linear infinite;
+			}
+			@keyframes square
+			{
+				0%{left:0px;top:0px;background-color:cyan}
+				25%{left:250px;top:0px;background-color:blue}
+				50%{left:250px;top:250px;background-color:green}
+				75%{left:0px;top:250px;background-color:yellow}
+				100%{left:0px;top:0px;background-color:cyan}
+			}
+		</style>
+	</head>
+	<body>
+			<div></div>
+	</body>
+</html>
