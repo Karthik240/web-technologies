@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Mouse Events</title>
+		
+	</head>
+	<body bgcolor="powderblue">
+		<button onclick="btnclick()">Click me</button>
+		<p id="ex1"></p>
+		<p onmousedown="MouseDown()" onmouseup="MouseUp()" id="ex2">
+		OnMouseDown() function sets color to red.onMouseUp() function sets color to blue
+		</p>
+		<p onmouseover="MouseOver()" onmouseleave="MouseLeave()" id="ex3">
+		the size of the text increases as you hover the text
+		</p>
+		<p onmousemove="MouseMove()" onmouseout="MouseOut()" id="ex4">
+		move mouse on the text and observe 
+		</p>
+		<script>
+			function btnclick()
+			{
+				document.getElementById("ex1").innerHTML="you clicked the button";
+			}
+			function MouseDown()
+			{
+				document.getElementById("ex2").style.color = "red";
+			}
+			function MouseUp()
+			{
+				document.getElementById("ex2").style.color = "blue";
+			}
+			function MouseOver()
+			{
+				document.getElementById("ex3").style.fontSize = "25px";
+			} 
+			function MouseLeave()
+			{
+				document.getElementById("ex3").style.fontSize = "14px";
+			} 
+			function MouseMove()
+			{
+				document.getElementById("ex4").style.backgroundColor = "cyan";
+			} 
+			function MouseOut()
+			{
+				document.getElementById("ex4").style.backgroundColor = "powderblue";
+			} 
+		</script>
+	</body>
+</html>

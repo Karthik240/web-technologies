@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>binary search</title>
+		<script>
+			var n = parseInt(window.prompt("enter the no of elements")),i;
+			var ele,pos;
+			const a=[];
+			for(i=0;i<n;i++)
+				a[i]=parseInt(window.prompt("enter the "+i+" th element"));
+			document.writeln("elements in array<br>"+a);
+			ele = parseInt(window.prompt("enter the element to search"));
+			function binary_search(a,n,ele)
+			{
+				var l=0,r=n-1,m
+				while(l<r)
+				{
+					m=Math.floor((l+r)/2);
+					if(a[m]===ele)
+						return m;
+					else if(a[m]<ele)
+						l=m+1
+					else
+						r=m-1
+				}
+				return -1;
+			}
+			a.sort((x,y)=>{return x-y})
+			document.writeln("<br>after sort"+a);
+			pos=binary_search(a,n,ele)
+			if(pos===-1)
+				document.writeln("<br>element "+ele+" not found in array");
+			else
+				document.writeln("<br>element "+ele+" found at pos "+pos+" in  array");
+		</script>
+	</head>
+</html>

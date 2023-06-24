@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Event Bubbling</title>
+		<script>
+			function par_click()
+			{
+				document.getElementById("sample1").innerHTML="you clicked parent button";
+			}
+			function chi_click()
+			{
+				document.getElementById("sample2").innerHTML="you clicked child button";
+			}
+		</script>
+	</head>
+	<body bgcolor="powderblue">
+		<div id="parent" onclick="par_click()">
+			<button>
+				<h2>parent</h2>
+			</button>
+			<button id="child" onclick="chi_click()">
+				<h4>child</h4>
+			</button>
+		</div>
+		<div id="sample1"></div>
+		<div id="sample2"></div>
+	</body>
+</html>

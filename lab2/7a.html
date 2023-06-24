@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Form Events</title>
+		<script>
+			function modify()
+			{
+				var val=document.getElementById("selection").value;
+				document.getElementById("demo").innerHTML = "You selected : "+val;
+			}
+			function changeBG(x)
+			{
+				x.style.background = "cyan";
+			}
+			function myalert()
+			{
+				window.alert("you left the selection box");
+			}
+		</script>
+	</head>
+	<body bgcolor="powderblue">
+		<center><h3><p> select an option </p>
+		<select id="selection" onchange="modify()" onfocus="changeBG(this)" onblur="myalert()">
+			<option value="HTML">HTML</option>
+			<option value="CSS">CSS</option>
+			<option value="JS">JS</option>
+			<option value="XML">XML</option>
+		</select>
+		<p id="demo"></p>
+		</h3></center>
+	</body>
+</html>
+		

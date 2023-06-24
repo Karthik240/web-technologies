@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>recursive functions</title>
+		<script>
+			function factorial(num)
+			{
+				if (num==1)
+					return 1;
+				return num*factorial(num-1);
+			}
+			function fibanocci(num)
+			{
+				if(num==0)
+					return 0;
+				if(num==1||num==2)
+					return 1;
+				return (fibanocci(num-1)+fibanocci(num-2));
+			}
+			function power(base,pow)
+			{
+				if(pow==0)
+					return 1;
+				return base*power(base,pow-1);
+			}
+			var f,fib,p,b;
+			f=parseInt(window.prompt("<br>enter the number to find factorial"));
+			document.writeln("<br>factorial of "+f+" is "+factorial(f));
+			fib=parseInt(window.prompt("<br>enter the number to find nth fibanocii"));
+			document.writeln("<br>fibanocii of "+fib+" is "+fibanocci(fib));
+			b=parseInt(window.prompt("<br>enter the base"));
+			p=parseInt(window.prompt("<br>enter the power"));
+			document.writeln("<br>"+b+"raise to power of "+p+" is "+power(b,p));
+		</script>
+	</head>
+	<body></body>
+</html>
